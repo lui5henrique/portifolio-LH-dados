@@ -1,0 +1,7 @@
+# Imagem de referência de design (não faz parte do site publicado)
+img/design_referencia.png
+
+# SO / editor
+.DS_Store
+Thumbs.db
+.vscode/

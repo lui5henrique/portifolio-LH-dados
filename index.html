@@ -22,6 +22,7 @@
     <nav class="nav" id="nav">
       <a href="#inicio" data-nav>Início</a>
       <a href="#sobre" data-nav>Sobre</a>
+      <a href="#processo" data-nav>Processo</a>
       <a href="#projetos" data-nav>Projetos</a>
       <a href="#experiencia" data-nav>Experiência</a>
       <a href="#formacao" data-nav>Formação</a>
@@ -50,13 +51,13 @@
           <span class="role-sub">Analista de Dados &amp; BI · AGU</span>
         </p>
         <p class="hero-text">
-          Analista de Dados &amp; BI na <strong>AGU</strong> (Advocacia-Geral da União), atuando
-          de ponta a ponta: Engenharia de Dados, Desenvolvimento Web, Power BI, Gestão de
-          Projetos, Governança e Segurança de Dados.
+          Analista de Dados &amp; BI na <strong>AGU</strong> (Advocacia-Geral da União),
+          responsável pelo ciclo completo dos dados — da coleta em múltiplas fontes até a
+          automação dos painéis — com governança e segurança em cada etapa.
         </p>
         <div class="hero-actions">
           <a href="#projetos" class="btn btn-primary">Ver projetos</a>
-          <a href="#sobre" class="btn btn-outline">Mais sobre mim</a>
+          <a href="#processo" class="btn btn-outline">Como eu trabalho</a>
         </div>
 
         <dl class="hero-stats">
@@ -124,8 +125,50 @@
     </div>
   </section>
 
+  <!-- PROCESSO -->
+  <section class="section" id="processo">
+    <div class="container">
+      <p class="section-eyebrow">Metodologia</p>
+      <h2 class="section-title">Como eu trabalho: do dado bruto ao painel automatizado.</h2>
+      <p class="section-lead">O mesmo fluxo em todo projeto: coleto, trato, modelo, visualizo e automatizo — com segurança e governança em cada etapa, não só no final.</p>
+
+      <div class="process-grid">
+        <div class="process-card reveal">
+          <span class="process-num">01</span>
+          <h3>Coleta &amp; Planilhas</h3>
+          <p>Coleto dados de sistemas web (Comprasnet), sistemas de gestão (Tesouro Gerencial) e planilhas alimentadas manualmente — cada fonte com sua própria formatação. Quando o setor precisa, também crio a planilha do zero.</p>
+        </div>
+        <div class="process-card reveal">
+          <span class="process-num">02</span>
+          <h3>Tratamento &amp; ETL</h3>
+          <p>Trato e padronizo as bases no VS Code com Python (Pandas). A IA acelera o processo, mas todo resultado do ETL passa por conferência minha antes de seguir adiante.</p>
+        </div>
+        <div class="process-card reveal">
+          <span class="process-num">03</span>
+          <h3>Análise &amp; Indicadores</h3>
+          <p>Com a base validada e segura, crio KPIs, métricas, fórmulas DAX e colunas calculadas — com apoio de IA e checagem própria de cada resultado.</p>
+        </div>
+        <div class="process-card reveal">
+          <span class="process-num">04</span>
+          <h3>Visualização</h3>
+          <p>Construo o painel em Power BI ou em um painel web (HTML), conforme a necessidade do gestor — sempre certificando o resultado antes da entrega.</p>
+        </div>
+        <div class="process-card reveal">
+          <span class="process-num">05</span>
+          <h3>Automação</h3>
+          <p>Crio os fluxos que alimentam os painéis automaticamente a cada atualização da base, sem depender de atualização manual.</p>
+        </div>
+        <div class="process-card process-card-governance reveal">
+          <span class="process-num">+</span>
+          <h3>Governança &amp; Segurança dos Dados</h3>
+          <p>Responsável pela segurança, manutenção e governança de todas as bases e painéis — do início ao fim do processo, de forma contínua.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- PROJETOS -->
-  <section class="section" id="projetos">
+  <section class="section section-light" id="projetos">
     <div class="container">
       <p class="section-eyebrow">Portfólio</p>
       <h2 class="section-title">Projetos</h2>
@@ -134,14 +177,14 @@
       <div class="projects-grid">
 
         <article class="project-card reveal">
-          <div class="project-tags"><span>Power BI</span><span>JavaScript</span></div>
+          <div class="project-tags"><span>Visualização</span><span>Power BI</span><span>JavaScript</span></div>
           <h3>Painel Orçamentário — AGU</h3>
           <p>Dashboard interativo para acompanhamento da execução orçamentária, cruzando dados de contratos e empenhos em um só painel.</p>
           <a href="https://github.com/lui5henrique/painel_AGU_orcamentario" target="_blank" rel="noopener" class="project-link">Ver no GitHub →</a>
         </article>
 
         <article class="project-card reveal">
-          <div class="project-tags"><span>Power BI</span><span>HTML/CSS</span></div>
+          <div class="project-tags"><span>Visualização</span><span>Power BI</span><span>HTML/CSS</span></div>
           <h3>Painel de Custo de Viagem — AGU</h3>
           <p>Painel de controle de despesas com viagens a serviço, consolidando lançamentos em uma visão única por período.</p>
           <a href="https://github.com/lui5henrique/painel_custo_viagem-AGU" target="_blank" rel="noopener" class="project-link">Ver no GitHub →</a>
@@ -155,7 +198,7 @@
         </article>
 
         <article class="project-card reveal">
-          <div class="project-tags"><span>Python</span><span>SQL</span></div>
+          <div class="project-tags"><span>Tratamento &amp; Análise</span><span>Python</span><span>SQL</span></div>
           <h3>Análise de Futebol com Python &amp; SQL</h3>
           <p>Estudos aplicados de análise exploratória e consultas SQL sobre estatísticas de futebol — da limpeza de dados à geração de insights.</p>
           <a href="https://github.com/lui5henrique/footure_analista_futebol" target="_blank" rel="noopener" class="project-link">Ver no GitHub →</a>
@@ -179,7 +222,7 @@
   </section>
 
   <!-- EXPERIÊNCIA -->
-  <section class="section section-light" id="experiencia">
+  <section class="section" id="experiencia">
     <div class="container">
       <p class="section-eyebrow">Experiência</p>
       <h2 class="section-title">Experiência profissional</h2>
@@ -191,14 +234,13 @@
             <p class="timeline-period">Atual</p>
             <h3>Analista de Dados &amp; BI — AGU <span class="muted">(Advocacia-Geral da União)</span></h3>
             <p>
-              Atuação de ponta a ponta em projetos de dados: Engenharia de Dados,
-              Desenvolvimento Web, Power BI, Gestão de Projetos e Governança e Segurança de
-              Dados. Entre as entregas, painéis de acompanhamento orçamentário, custo de
-              viagem e controle de faturas, além de um portal de dados interno para consulta
-              de contratos, empenhos e ordens bancárias.
+              Atuo no ciclo completo dos dados — veja <a href="#processo" class="inline-link">como eu trabalho</a> —
+              entregando painéis de acompanhamento orçamentário, custo de viagem e controle de
+              faturas, além de um portal de dados interno para consulta de contratos, empenhos
+              e ordens bancárias.
             </p>
             <div class="tags">
-              <span>Engenharia de Dados</span><span>Desenvolvimento Web</span><span>Power BI</span><span>Gestão de Projetos</span><span>Governança &amp; Segurança de Dados</span>
+              <span>Painel Orçamentário</span><span>Custo de Viagem</span><span>Controle de Faturas</span><span>Portal de Dados</span>
             </div>
           </div>
         </li>
@@ -294,23 +336,23 @@
       <div class="hardskills-grid">
 
         <div class="hardskill-card reveal">
-          <h3>Análise &amp; BI</h3>
+          <h3>Coleta &amp; Tratamento</h3>
+          <div class="tags">
+            <span>SQL</span><span>Python (pandas)</span><span>Limpeza e tratamento</span><span>Power Query</span><span>Excel</span><span>Google Sheets</span><span>CSV</span><span>APIs</span>
+          </div>
+        </div>
+
+        <div class="hardskill-card reveal">
+          <h3>Análise &amp; Visualização</h3>
           <div class="tags">
             <span>Power BI</span><span>DAX</span><span>Modelagem</span><span>KPIs</span><span>Storytelling de dados</span><span>IA — Inteligência Artificial</span>
           </div>
         </div>
 
         <div class="hardskill-card reveal">
-          <h3>Dados &amp; ETL</h3>
+          <h3>Automação &amp; Governança</h3>
           <div class="tags">
-            <span>SQL</span><span>Python (pandas)</span><span>Limpeza e tratamento</span><span>Power Query</span><span>Automação de rotinas</span>
-          </div>
-        </div>
-
-        <div class="hardskill-card reveal">
-          <h3>Ferramentas</h3>
-          <div class="tags">
-            <span>Excel</span><span>Git &amp; GitHub</span><span>Jupyter Notebook</span><span>CSV</span><span>Google Sheets</span><span>APIs</span><span>Inglês técnico (intermediário)</span>
+            <span>Automação de rotinas</span><span>Git &amp; GitHub</span><span>Jupyter Notebook</span><span>Segurança &amp; Governança de Dados</span><span>Inglês técnico (intermediário)</span>
           </div>
         </div>
 

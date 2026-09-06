@@ -120,8 +120,30 @@ p { margin: 0; }
   font-size: 1.3rem;
   color: var(--paper);
   margin-right: auto;
+  white-space: nowrap;
 }
-.logo span { color: var(--gold); }
+.logo .logo-dot { color: var(--gold); }
+
+/* ---------- logo: "Luis Henrique" encolhe para "LH." ao rolar ---------- */
+.logo-static { display: inline-block; }
+.logo-collapse {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: bottom;
+  opacity: 1;
+  transition: max-width .5s cubic-bezier(.65,0,.35,1), opacity .3s ease;
+}
+.logo-collapse-uis { max-width: 4ch; }
+.logo-collapse-space { max-width: 2ch; }
+.logo-collapse-enrique { max-width: 9ch; }
+.site-header.is-scrolled .logo-collapse {
+  max-width: 0;
+  opacity: 0;
+}
+@media (max-width: 1100px) {
+  .logo-collapse { max-width: 0 !important; opacity: 0 !important; }
+}
 .nav {
   display: flex;
   gap: 26px;
@@ -668,4 +690,5 @@ p { margin: 0; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .reveal { transition: none; opacity: 1; transform: none; }
+  .logo-collapse { transition: none; }
 }

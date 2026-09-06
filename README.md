@@ -3,7 +3,7 @@
 Site pessoal (portfólio) de **Luis Henrique**, Analista de Dados & BI na AGU (Advocacia-Geral
 da União), em Recife/PE.
 
-🔗 **Site publicado:** _(adicionado após o primeiro deploy)_
+🔗 **Site publicado:** https://portifolio-lh-dados.vercel.app
 
 ## Sobre o projeto
 

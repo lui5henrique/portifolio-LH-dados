@@ -587,6 +587,13 @@ p { margin: 0; }
   align-items: center;
 }
 .contact-text { margin-bottom: 30px; }
+.contact-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.btn-icon { width: 18px; height: 18px; flex-shrink: 0; }
+.btn-icon svg { width: 100%; height: 100%; }
 .social-list {
   display: grid;
   gap: 14px;

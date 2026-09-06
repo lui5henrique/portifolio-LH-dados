@@ -124,23 +124,20 @@ p { margin: 0; }
 }
 .logo .logo-dot { color: var(--gold); }
 
-/* ---------- logo: "Luis Henrique" encolhe para "LH." ao rolar ---------- */
+/* ---------- logo: "LH." expande para "Luis Henrique" ao rolar ---------- */
 .logo-static { display: inline-block; }
 .logo-collapse {
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
   vertical-align: bottom;
-  opacity: 1;
-  transition: max-width .5s cubic-bezier(.65,0,.35,1), opacity .3s ease;
-}
-.logo-collapse-uis { max-width: 4ch; }
-.logo-collapse-space { max-width: 2ch; }
-.logo-collapse-enrique { max-width: 9ch; }
-.site-header.is-scrolled .logo-collapse {
   max-width: 0;
   opacity: 0;
+  transition: max-width .5s cubic-bezier(.65,0,.35,1), opacity .3s ease;
 }
+.site-header.is-scrolled .logo-collapse-uis { max-width: 4ch; opacity: 1; }
+.site-header.is-scrolled .logo-collapse-space { max-width: 2ch; opacity: 1; }
+.site-header.is-scrolled .logo-collapse-enrique { max-width: 9ch; opacity: 1; }
 @media (max-width: 1100px) {
   .logo-collapse { max-width: 0 !important; opacity: 0 !important; }
 }
